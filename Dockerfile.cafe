@@ -100,3 +100,5 @@ ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/start_textile"]
 
 # Execute the daemon subcommand by default
 CMD ["daemon", "--repo=/data/textile", "--debug"]
+
+RUN ["/usr/local/bin/textile", "token", "add"]
