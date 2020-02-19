@@ -29,4 +29,4 @@ if [ "$1" = "daemon" ]; then
 	shift
 fi
 
-exec textile daemon "$@" & sleep 10s && exec textile token add
+exec textile daemon "$@"
