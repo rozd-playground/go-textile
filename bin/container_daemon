@@ -30,3 +30,6 @@ if [ "$1" = "daemon" ]; then
 fi
 
 exec textile daemon "$@"
+
+# generate and storea an access token
+exec textile token add
